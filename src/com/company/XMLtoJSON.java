@@ -9,10 +9,10 @@ public class XMLtoJSON implements Adapter {
 
     public static int INDENTATION = 4;
     String json_data;
-    //String xml_data;
+
 
     @Override
-    public String getXML_data(String Filename) {
+    public String get_data(String Filename) {
         XMLwriter xml = new XMLwriter();
         String path = "C:\\Users\\Deema\\IdeaProjects\\FileFormateAdapterConvertor\\src\\com\\company\\"+Filename;
         xml.Read_xml_file(path);
@@ -33,7 +33,7 @@ public class XMLtoJSON implements Adapter {
     }
 
     @Override
-    public void displayJSON_data() {
+    public void display_data() {
         System.out.println(json_data);
     }
 

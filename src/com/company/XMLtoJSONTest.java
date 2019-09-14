@@ -40,7 +40,7 @@ public class XMLtoJSONTest {
                 "    <heading>Reminder</heading>\n" +
                 "    <body>Don't forget me this weekend!</body>\n" +
                 "</note>\n";
-        String Actual = xtj.getXML_data("xml");
+        String Actual = xtj.get_data("xml");
 
         assertEquals(Expected,Actual);
     }
